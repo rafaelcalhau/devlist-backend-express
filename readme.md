@@ -21,7 +21,7 @@ Fun project that just list awesome devs from Github :)
 
 #### 4. Run the application:
 
-    node ./dist/server.js # the application will start on the PORT 3000
+    yarn start # the application will start on the PORT 3000
 
 ## Security best practices
 

@@ -7,7 +7,7 @@
   "scripts": {
     "build": "sucrase ./src -d ./dist --transforms typescript,imports",
     "dev": "nodemon src/server.ts --ignore __tests__",
-    "start": "node ./dist/server.js",
+    "start": "yarn build && node ./dist/server.js",
     "test": "NODE_ENV=test jest --detectOpenHandles"
   },
   "dependencies": {

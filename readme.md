@@ -3,6 +3,7 @@
 [![MIT License](https://img.shields.io/npm/l/express.svg?maxAge=2592000)](LICENSE)
 
 Fun project that just list awesome devs from Github :)
+https://devlist-github.herokuapp.com/api
 
 ## Getting Started
 

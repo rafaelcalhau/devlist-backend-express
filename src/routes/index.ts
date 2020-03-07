@@ -1,4 +1,4 @@
-import { Application, Router } from 'express'
+import { Application, Router, Request, Response } from 'express'
 import { IncomingMessage, ServerResponse } from 'http'
 import httpProxy from 'http-proxy'
 import RateLimit from 'express-rate-limit'
@@ -20,6 +20,10 @@ export default (app: Application): void => {
   }
 
   app.use('/api', [apiLimiter, routes])
+
+  routes.get('/', (req: Request, res: Response) => {
+    return res.json({ message: 'Welcome! :)' })
+  })
   routes.get('/users', proxyMiddleware)
   routes.get('/users/:username', proxyMiddleware)
   routes.get('/users/:username/repos', proxyMiddleware)

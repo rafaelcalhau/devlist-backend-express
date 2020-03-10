@@ -9,7 +9,7 @@ https://devlist-github.herokuapp.com/api
 
 #### 1. Clone this repo to initialize a new Node project.
 
-    git clone https://rafaelcalhau@dev.azure.com/rafaelcalhau/DevList/_git/DevList myProject
+    git clone https://github.com/rafaelcalhau/devlist-backend-express.git myProject
 
 #### 2. Install the dependencies:
 
